@@ -1,0 +1,32 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nx-todo/modules/authentication": [
+        "libs/modules/authentication/src/index.ts"
+      ],
+      "@nx-todo/modules/todo": ["libs/modules/todo/src/index.ts"],
+      "@nx-todo/shared/assets": ["libs/shared/assets/src/index.ts"],
+      "@nx-todo/shared/components": ["libs/shared/components/src/index.ts"],
+      "@nx-todo/shared/core": ["libs/shared/core/src/index.ts"],
+      "@nx-todo/shared/domain-types": ["libs/shared/domain-types/src/index.ts"],
+      "@nx-todo/shared/environment": ["libs/shared/environment/src/index.ts"],
+      "@nx-todo/shared/services": ["libs/shared/services/src/index.ts"],
+      "@nx-todo/shared/styles": ["libs/shared/styles/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
