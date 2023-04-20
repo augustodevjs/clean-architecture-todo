@@ -30,6 +30,6 @@ $ git clone https://github.com/augustodevjs/todo
 $ yarn
 
 # Rode o projeto
-$ yarn run dev
+$ yarn start
 
 ```
