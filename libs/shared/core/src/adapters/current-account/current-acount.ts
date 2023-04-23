@@ -1,5 +1,5 @@
-import { ContaUsuario } from "@nx-todo/shared/domain-types"
 import { Cache, Cryptography } from ".."
+import { ContaUsuario } from "../../types"
 
 export const getCurrentAccount = <T>(): T | undefined => {
   const accessToken = Cache.get({ key: 'accessToken' })
