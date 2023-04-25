@@ -1,1 +1,1 @@
-export * from './lib/shared-styles';
+export * from './global'
