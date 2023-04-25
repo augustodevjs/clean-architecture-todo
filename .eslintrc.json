@@ -1,12 +1,6 @@
 {
   "extends": ["plugin:@nrwl/nx/react", "./.eslintrc.base.json"],
   "ignorePatterns": ["!**/*"],
-  "@nrwl/nx/enforce-module-boundaries": [
-    "error",
-    {
-      "allow": ["^.*/tools/.*"],
-    }
-  ],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"],
@@ -15,6 +9,6 @@
     {
       "files": ["*.js", "*.jsx"],
       "rules": {}
-    },
+    }
   ]
 }
