@@ -1,1 +1,2 @@
-export * from './lib/modules-authentication';
+export * from './login'
+export * from './register'

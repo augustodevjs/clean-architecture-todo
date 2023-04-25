@@ -1,17 +1,12 @@
-import styled from 'styled-components';
+import { Router } from '../routes'
+import { GlobalStyle } from "@todo/shared/styles"
+import { AuthProvider, CurrentAccount } from "@todo/shared/core"
 
-import NxWelcome from './nx-welcome';
-
-const StyledApp = styled.div`
-  // Your style here
-`;
-
-export function App() {
+export const App = () => {
   return (
-    <StyledApp>
-      <NxWelcome title="todo" />
-    </StyledApp>
-  );
+    <AuthProvider getCurrentAccount={CurrentAccount.getCurrentAccount}>
+      <Router />
+      <GlobalStyle />
+    </AuthProvider>
+  )
 }
-
-export default App;
