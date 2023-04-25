@@ -27,7 +27,7 @@ Além disso, no projeto foi utilizado o Nx workspace para permitir a visualizaç
 
 ```bash
 # Clone o projeto
-$ git clone https://github.com/augustodevjs/todo
+$ git clone https://github.com/augustodevjs/clean-architecture-todo
 
 # Instale todas as depedências
 $ yarn
