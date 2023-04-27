@@ -8,4 +8,4 @@ export type ContaUsuario = {
   jti: string;
   name: string;
   nbf: number;
-}
+};
