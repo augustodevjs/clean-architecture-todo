@@ -12,6 +12,7 @@ export const Modal = styled(ReactModal) <Props>`
   position: relative;
   border-radius: 0.25rem;
   max-width: 700px;
+  margin: 1rem;
 
   ${(props) => {
     switch (props.size) {
