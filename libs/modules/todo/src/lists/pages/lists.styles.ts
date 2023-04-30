@@ -13,6 +13,11 @@ export const Header = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
+
+  @media(max-width: 550px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 export const Content = styled.div`
@@ -32,6 +37,10 @@ export const ButtonGroup = styled.div`
 
   button:last-child {
     background: #F75A68;
+  }
+
+  @media(max-width: 550px) {
+    margin-top: 1rem;
   }
 
   button {
