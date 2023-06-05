@@ -12,39 +12,37 @@ import { FormLogin } from '../components';
 import * as S from './login.styles';
 
 export const Login = () => {
-  const navigate = useNavigate()
-  const location = useLocation()
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const [isLoading, setIsLoading] = useState(false);
 
   const form = useForm<LoginFormModel>({
     mode: 'onChange',
-
-
     resolver: yupResolver(loginFormValidation),
   });
 
-  const { getCurrentAccount, saveAccessToken } = useAuth()
+  const { getCurrentAccount, saveAccessToken } = useAuth();
 
   useEffect(() => {
     if (getCurrentAccount()) {
-      navigate(env.app.homepageUrl)
+      navigate(env.app.homepageUrl);
     }
-  }, [])
+  }, []);
 
   const onSuccess = async (data: LoginFormModel) => {
-    const accessToken = await AuthService.login({ data })
+    const accessToken = await AuthService.login({ data });
 
-    saveAccessToken(accessToken.accessToken)
+    saveAccessToken(accessToken.accessToken);
 
     if (location.state !== null) {
-      navigate((location.state.from.pathname))
+      navigate(location.state.from.pathname);
     } else {
-      navigate(env.app.homepageUrl)
+      navigate(env.app.homepageUrl);
     }
 
     setIsLoading(false);
-  }
+  };
 
   const onError = (error: unknown) => {
     setIsLoading(false);
