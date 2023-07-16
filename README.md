@@ -5,9 +5,9 @@
 <h1 align="center"><img src="./libs/shared/assets/src/todo.png"></h1>
 <h1 align="center"><img src="./libs/shared/assets/src/graph-nx-workspace-todo.png"></h1>
 
-Nesse projeto TODO que eu criei, o objetivo principal foi colocar em prática os conhecimentos adquiridos sobre arquitetura limpa, clean code, CI e CD.
+In this project TODO that I created, the main objective was to put into practice the knowledge acquired about clean architecture, clean code, CI, and CD.
 
-### Tecnologias utilizadas:
+### Technologies used::
 
 - React
 - TypeScript
@@ -17,8 +17,8 @@ Nesse projeto TODO que eu criei, o objetivo principal foi colocar em prática os
 - Private Route
 - React Hook Form
 
-Nesse projeto, desenvolvi um sistema completo que permite a criação e autenticação de usuários, além de possibilitar a criação, leitura, atualização e deleção de tarefas (também conhecido como CRUD). A fim de seguir os princípios de clean code, implementei uma abstração chamada httpClient que permite realizar as requisições HTTP de forma independente do axios.
+I developed a complete system that allows the creation and authentication of users, as well as the creation, reading, updating, and deletion of tasks (also known as CRUD). To follow the principles of clean code, I implemented an abstraction called httpClient that allows performing HTTP requests independently of axios.
 
-Para garantir a qualidade do código e a organização da estrutura, utilizei diversas práticas de arquitetura limpa e clean code, resultando em uma solução simples e bem organizada. Especificamente, a implementação do axios foi realizada por meio da classe AxiosHttpClient, que implementa a interface httpClient.
+To ensure code quality and organizational structure, I used various practices of clean architecture and clean code, resulting in a simple and well-organized solution. Specifically, the implementation of axios was done through the AxiosHttpClient class, which implements the httpClient interface.
 
-Para facilitar a compreensão das relações entre as bibliotecas, utilizei o Nx workspace, permitindo uma visualização gráfica da estrutura. Além disso, configurei o CI para executar testes, lint e build a cada push no repositório do GitHub, por meio do GitHub Actions. Por fim, implementei o Continuous Deployment com a Vercel, possibilitando que o deploy seja realizado automaticamente com cada pull request na main. Tudo isso demonstra o cuidado e a preocupação constante em entregar valor ao usuário final.
+To facilitate understanding of the relationships between libraries, I used the Nx workspace, allowing for a graphical view of the structure. Additionally, I configured CI to run tests, linting, and build on every push to the GitHub repository using GitHub Actions. Finally, I implemented Continuous Deployment with Vercel, enabling automatic deployment with each pull request to the main branch. All of this demonstrates the care and constant focus on delivering value to the end-user.
