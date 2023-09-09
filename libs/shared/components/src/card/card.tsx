@@ -4,7 +4,6 @@ import { MdList } from 'react-icons/md';
 import * as S from './card.styles';
 import { CardProps } from '../types';
 
-
 export const Card: React.FC<CardProps> = ({
   stateTask,
   titleTask,

@@ -6,9 +6,13 @@ import { FormProvider, SubmitHandler, useForm } from 'react-hook-form';
 import { ListsService } from '@todo/shared/services';
 import { Alert, ValidationError } from '@todo/shared/core';
 import { Button, Modal, ModalProps } from '@todo/shared/components';
-import { ListsFormModel, ListsModel, listFormValidation } from '@todo/shared/domain-types';
+import {
+  ListsFormModel,
+  ListsModel,
+  listFormValidation,
+} from '@todo/shared/domain-types';
 import { ListForm } from '../../components';
-import * as S from './add-list-modal.styles'
+import * as S from './add-list-modal.styles';
 
 type Props = Pick<ModalProps, 'isOpen' | 'onRequestClose'> & {
   setData: Dispatch<SetStateAction<ListsModel[]>>;
@@ -55,7 +59,7 @@ export const AddListModal: React.FC<Props> = ({
 
     form.reset();
     setData((prevData) => [...prevData, response]);
-  }
+  };
 
   const onError = (error: unknown) => {
     setIsLoading(false);
@@ -74,14 +78,13 @@ export const AddListModal: React.FC<Props> = ({
     }
   };
 
-
   const onSubmit: SubmitHandler<ListsFormModel> = async (data) => {
     setIsLoading(true);
 
     try {
-      await onSuccess(data)
+      await onSuccess(data);
     } catch (error) {
-      onError(error)
+      onError(error);
     }
   };
 

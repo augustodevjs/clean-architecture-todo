@@ -1,7 +1,7 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import { ProtectedRoute } from '../proxies'
-import { Login, Register } from '@todo/modules/authentication'
-import { Lists, NotFound } from '@todo/modules/todo'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { ProtectedRoute } from '../proxies';
+import { Login, Register } from '@todo/modules/authentication';
+import { Lists, NotFound } from '@todo/modules/todo';
 
 export const Router: React.FC = () => {
   return (
@@ -17,5 +17,5 @@ export const Router: React.FC = () => {
         <Route path="/" element={<ProtectedRoute component={Lists} />} />
       </Routes>
     </BrowserRouter>
-  )
-}
+  );
+};
